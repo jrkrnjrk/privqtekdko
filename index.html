@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Léo Czens - Bot Discord IA Personnalisé</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4a90e2;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        section p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-section {
+            background-color: #f9f9f9;
+            padding: 40px;
+        }
+        .contact-section form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-section form input,
+        .contact-section form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 100%;
+        }
+        .contact-section form input[type="submit"] {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            font-weight: bold;
+        }
+        .contact-section form input[type="submit"]:hover {
+            background-color: #357ab7;
+        }
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Section CV */
+        .cv-section {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .cv-section h3 {
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+        .cv-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .cv-section ul li {
+            margin-bottom: 15px;
+        }
+        .cv-section strong {
+            font-weight: bold;
+        }
+
+        /* Section Réalisations */
+        .achievements-section {
+            background-color: #fff;
+            padding: 40px;
+        }
+        .achievements-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .achievements-section ul li {
+            margin-bottom: 15px;
+        }
+
+        /* Section Témoignages */
+        .testimonials-section {
+            background-color: #f9f9f9;
+            padding: 40px;
+        }
+        .testimonials-section blockquote {
+            font-style: italic;
+            border-left: 4px solid #4a90e2;
+            padding-left: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .testimonials-section cite {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Section Compétences Techniques */
+        .skills-section {
+            background-color: #fff;
+            padding: 40px;
+        }
+        .skills-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .skills-section ul li {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Léo Czens</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#achievements">Réalisations</a></li>
+                <li><a href="#testimonials">Témoignages</a></li>
+                <li><a href="#bots">Bots Discord</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section À propos -->
+        <section id="about">
+            <h2>À propos de Léo</h2>
+            <p>Léo Czens est un développeur créatif passionné par la technologie et l'innovation. Il se spécialise dans la création de bots intelligents pour Discord, en se concentrant sur l'IA et l'automatisation des tâches.</p>
+        </section>
+
+        <!-- Section Portfolio avec un projet de bot Discord IA -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <h3>Projet : Bot Discord IA</h3>
+                    <p>Ce bot Discord utilise l'intelligence artificielle pour gérer automatiquement un serveur, répondre aux questions des membres, et exécuter des commandes avancées. Il est capable d'apprendre et de s'adapter aux besoins des utilisateurs en temps réel.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section CV -->
+        <section id="cv">
+            <h2>CV de Léo Czens</h2>
+            <div class="cv-section">
+                <h3>Expérience Professionnelle</h3>
+                <ul>
+                    <li>
+                        <strong>Développeur Freelance - Création de bots Discord</strong><br>
+                        2022 - Présent<br>
+                        - Conception et développement de bots Discord personnalisés pour divers clients.<br>
+                        - Spécialisation dans l'intégration d'IA pour l'automatisation et l'interaction avec les utilisateurs.
+                    </li>
+                </ul>
+                
+                <h3>Compétences</h3>
+                <ul>
+                    <li>Développement de bots Discord</li>
+                    <li>Intelligence Artificielle et Automatisation</li>
+                    <li>Programmation : Python, JavaScript, Node.js</li>
+                    <li>API Discord et gestion des serveurs</li>
+                    <li>Déploiement sur Vercel et autres plateformes d'hébergement</li>
+                </ul>
+
+                <h3>Éducation</h3>
+                <ul>
+                    <li><strong>Diplôme en Informatique</strong><br>Université XYZ, 2020</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Compétences Techniques -->
+        <section id="skills" class="skills-section">
+            <h2>Compétences Techniques</h2>
+            <ul>
+                <li>Langages de Programmation : Python, JavaScript, TypeScript</li>
+                <li>Frameworks : Discord.js, Flask, Express</li>
+                <li>Technologies : RESTful APIs, WebSockets, Bases de données SQL/NoSQL</li>
+                <li>Outils de Déploiement : Docker, Kubernetes, GitHub Actions</li>
+                <li>Gestion de Projets : Agile, Scrum</li>
+            </ul>
+        </section>
+
+        <!-- Section Réalisations -->
+        <section id="achievements" class="achievements-section">
+            <h2>Réalisations</h2>
+            <ul>
+                <li>Développement d'un bot Discord primé pour une grande communauté de jeux, augmentant l'engagement des utilisateurs de 30%.</li>
+                <li>Intégration réussie d'une fonctionnalité d'IA pour l'analyse des sentiments des utilisateurs sur plusieurs serveurs Discord.</li>
+                <li>Création d'un tableau de bord en temps réel pour la gestion de bots, facilitant la supervision et le débogage.</li>
+            </ul>
+        </section>
+
+        <!-- Section Témoignages -->
+        <section id="testimonials" class="testimonials-section">
+            <h2>Témoignages</h2>
+            <blockquote>
+                <p>"Léo a transformé notre serveur Discord avec un bot incroyablement intelligent et utile. Son approche est à la fois professionnelle et innovante." - <cite>Jean Dupont, Fondateur de GameHub</cite></p>
+            </blockquote>
+            <blockquote>
+                <p>"Un développeur talentueux qui comprend vraiment les besoins de ses clients. Le bot qu'il a créé pour nous dépasse toutes nos attentes." - <cite>Marie Curie, Responsable Communauté chez TechTeam</cite></p>
+            </blockquote>
+        </section>
+
+        <!-- Section Bots Discord -->
+        <section id="bots">
+            <h2>Bots Discord Personnalisés</h2>
+            <p>Tu cherches à créer un bot Discord unique pour gérer ton serveur ou automatiser des tâches spécifiques ? Je conçois des bots personnalisés pour répondre à tes besoins, avec des fonctionnalités telles que la modération, des commandes custom, des notifications automatiques, et plus encore !</p>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <p>Pour toute demande concernant la création de bots Discord personnalisés ou d'autres services, envoie-moi un email via le formulaire ci-dessous ou directement à <a href="mailto:leoczene@tutamail.com">leoczene@tutamail.com</a>.</p>
+            <form action="mailto:leoczene@tutamail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Léo Czens. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
